@@ -4,6 +4,8 @@ import ToDoList from './components/ToDoList.js/ToDoList';
 import Login from './components/Login/Login';
 import Header from './components/Header';
 import RequireAuth from './components/RequireAuth';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
@@ -18,6 +20,7 @@ function App() {
         </RequireAuth>} />
         <Route path='/login' element={<Login />} />
       </Routes>
+      <ToastContainer />
     </div>
   );
 }
